@@ -30,12 +30,12 @@ $movies = [$Shining, $LordOfTheRings, $Matrix];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-black">
     <header class="bg-dark text-white text-center p-5">
         <h1>Movies</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur quaerat in perferendis provident facilis, illo ex commodi voluptas molestias?</p>
     </header>
-    <main class="bg-black">
+    <main>
         <div class="container py-4">
             <div class="movies_box">
                 <div class="row row-cols-3 p-3 g-3 text-center">
