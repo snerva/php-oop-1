@@ -33,24 +33,30 @@ $movies = [$Shining, $LordOfTheRings, $Matrix];
 <body>
     <header class="bg-dark text-white text-center p-5">
         <h1>Movies</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur quaerat in perferendis provident facilis, illo ex commodi voluptas molestias?</p>
     </header>
-    <main>
+    <main class="bg-black">
         <div class="container py-4">
             <div class="movies_box">
                 <div class="row row-cols-3 p-3 g-3 text-center">
                     <?php foreach ($movies as $movie) : ?>
-                        <div class="col  p-3">
-                            <div class="title">
-                                <h3><?php echo $movie->title ?></h3>
-                            </div>
-                            <div class="plot">
-                                <p><?php echo $movie->plot ?></p>
-                            </div>
-                            <div class="genre">
-                                <span><?php echo $movie->genre ?></span>
-                            </div>
-                            <div class="time">
-                                <span><?php echo $movie->duration ?></span>
+                        <div class="col  p-4">
+                            <div class="contents bg-dark text-white p-3">
+                                <div class="title pb-2">
+                                    <h3><?php echo $movie->title ?></h3>
+                                </div>
+                                <div class="poster">
+                                    <img class="img-fluid" src="<?php echo $movie->poster ?>" alt="">
+                                </div>
+                                <div class="plot p-2">
+                                    <p><?php echo $movie->plot ?></p>
+                                </div>
+                                <div class="genre">
+                                    <span><?php echo $movie->genre ?></span>
+                                </div>
+                                <div class="time pt-2">
+                                    <span><?php echo $movie->duration ?></span>
+                                </div>
                             </div>
 
                         </div>
