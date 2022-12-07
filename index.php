@@ -26,10 +26,39 @@ $movies = [$Shining, $LordOfTheRings, $Matrix];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
+    <header class="bg-dark text-white text-center p-5">
+        <h1>Movies</h1>
+    </header>
+    <main>
+        <div class="container py-4">
+            <div class="movies_box">
+                <div class="row row-cols-3 p-3 g-3 text-center">
+                    <?php foreach ($movies as $movie) : ?>
+                        <div class="col  p-3">
+                            <div class="title">
+                                <h3><?php echo $movie->title ?></h3>
+                            </div>
+                            <div class="plot">
+                                <p><?php echo $movie->plot ?></p>
+                            </div>
+                            <div class="genre">
+                                <span><?php echo $movie->genre ?></span>
+                            </div>
+                            <div class="time">
+                                <span><?php echo $movie->duration ?></span>
+                            </div>
+
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
