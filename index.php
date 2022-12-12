@@ -12,7 +12,8 @@ Creare un layout completo per stampare a schermo una lista di movies.
 Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle. 
 */
 
-require __DIR__ . '/Models/movies.php';
+require_once __DIR__ . '/Models/Movies.php';
+require_once __DIR__ . '/Models/Genre.php';
 
 $movies = [$Shining, $LordOfTheRings, $Matrix];
 //var_dump($movies);
